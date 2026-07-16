@@ -1,6 +1,8 @@
 // swift-tools-version: 6.0
 import PackageDescription
 
+let releaseVersion = "4.4.000"
+
 let package = Package(
     name: "Adfurikun-SPM-Afio",
     platforms: [.iOS(.v13)],
@@ -16,12 +18,12 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "AMoAd",
-            url: "https://github.com/glossom-dev/Adfurikun-SPM-Afio/releases/download/6.2.700/AMoAd.xcframework.zip",
+            url: "https://github.com/glossom-dev/Adfurikun-SPM-Afio/releases/download/\(releaseVersion)/AMoAd.xcframework.zip",
             checksum: "e8b55c0f6f22e3a49bd4fcfe7e9b85efe32216fd05fb44933889586e5a256214"
         ),
         .binaryTarget(
             name: "OMSDK_Cyberagentcojp3",
-            url: "https://github.com/glossom-dev/Adfurikun-SPM-Afio/releases/download/6.2.700/OMSDK_Cyberagentcojp3.xcframework.zip",
+            url: "https://github.com/glossom-dev/Adfurikun-SPM-Afio/releases/download/\(releaseVersion)/OMSDK_Cyberagentcojp3.xcframework.zip",
             checksum: "a61392f3cc7668ee65fa0c2fd2dce8531bdfbea2d6f5ac4a1e82bfafd403498a"
         ),
         .target(
